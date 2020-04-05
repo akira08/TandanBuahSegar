@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reportClickable_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/reportTitle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/actionButtonWrapper_ll"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="Bulan Agustus" />
+
+    <TextView
+        android:id="@+id/dateCreated_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportTitle_tv"
+        tools:text="24 June 2020" />
+
+    <LinearLayout
+        android:id="@+id/actionButtonWrapper_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/editReport_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/edit_button"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/deleteReportData_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/delete_button"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_delete" />
+    </LinearLayout>
+
+</RelativeLayout>

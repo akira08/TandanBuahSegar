@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008FEE</color>
+    <color name="colorPrimaryDark">#0055FF</color>
+    <color name="colorAccent">#2188D7</color>
+    <color name="delete_button">#E52828</color>
+    <color name="edit_button">#B773E1</color>
+    <color name="tableHeader">#1893FB</color>
+</resources>
